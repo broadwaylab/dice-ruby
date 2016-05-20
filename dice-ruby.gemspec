@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Michael Fellows"]
   s.email       = 'michael@broadwaylab.com'
 
-  s.files        = Dir["{lib}/**/*.rb", "LICENSE", "*.md"]
+  s.files        = Dir["lib/**/*.rb"]
   s.require_path = 'lib'
 
   s.homepage    =
