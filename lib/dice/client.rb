@@ -1,5 +1,5 @@
 require 'httparty'
-require_relative 'result'
+require 'dice/result'
 
 module Dice
   class Client
@@ -21,11 +21,8 @@ module Dice
     end
 
     def search
-      search = self.class.get(encoded_uri)
       results = []
-      search['resultItemList'].each do |data| 
-        results <<  Dice::Result.new(data: data)
-      end
+      self.class.get(encoded_uri)['resultItemList'].map { |data| results <<  Dice::Result.new(data: data) } 
       results
     end
 
