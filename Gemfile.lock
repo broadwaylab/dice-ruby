@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    dice-ruby (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.3)
+    multi_xml (0.5.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dice-ruby!
+  httparty
+
+BUNDLED WITH
+   1.12.4
